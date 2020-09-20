@@ -4,6 +4,8 @@ Virtual Machines for Development Environments.
 ## How to use
 Create a .env file referring to the .env-example.
 ```
+$ git clone https://github.com/bam6o0/devenv.git
+$ cd devenv
 $ vagrant up
 $ vagrant ssh-config >> ~/.ssh/config
 ```
