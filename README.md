@@ -7,6 +7,8 @@ Create a .env file referring to the .env-example.
 $ git clone https://github.com/bam6o0/devenv.git
 $ cd devenv
 $ vagrant up
+$ vagrant ssh
+// For vacode
 $ vagrant ssh-config >> ~/.ssh/config
 ```
 
