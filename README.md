@@ -8,6 +8,19 @@ $ vagrant up
 $ vagrant ssh-config >> ~/.ssh/config
 ```
 
+## Preinstall list
++ docker
++ docker-compose
++ python3
++ pip3
++ venv
++ n
++ nodejs
++ npm
++ aws-cli
++ aws-cdk
++ aws-mfa
+
 ## How to initialize
 ```
 $ vagrant halt && vagrant destroy -f && vagrant up
