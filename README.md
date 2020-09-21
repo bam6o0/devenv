@@ -15,6 +15,7 @@ $ vagrant ssh
 ```
 
 ## Preinstall list
++ ubuntu18.04
 + docker
 + docker-compose
 + python3
