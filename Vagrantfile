@@ -91,7 +91,6 @@ Vagrant.configure("2") do |config|
     sudo chmod +x /usr/local/bin/docker-compose
 
     sudo apt update
-    sudo apt upgrade -y
     sudo apt install -y python3 python3-pip nodejs npm
     sudo apt-get install -y python3-venv
     pip3 install aws-mfa
@@ -112,9 +111,12 @@ Vagrant.configure("2") do |config|
     docker run --rm -v /home/vagrant/.aws:/root/.aws amazon/aws-cli configure set aws_secret_access_key "#{ENV['AWS_SECRET_ACCESS_KEY']}" --profile default-long-term
     docker run --rm -v /home/vagrant/.aws:/root/.aws amazon/aws-cli configure set region ap-northeast-1 --profile default-long-term
     docker run --rm -v /home/vagrant/.aws:/root/.aws amazon/aws-cli configure set format json --profile default-long-term
+    docker run --rm -v /home/vagrant/.aws:/root/.aws amazon/aws-cli configure set region ap-northeast-1
+    docker run --rm -v /home/vagrant/.aws:/root/.aws amazon/aws-cli configure set format json
     sudo chown -R vagrant:vagrant /home/vagrant/.aws
 
     git config --system user.name "#{ENV['GIT_USER_NAME']}"
     git config --system user.email "#{ENV['GIT_USER_EMAIL']}"
+
   SHELL
 end
