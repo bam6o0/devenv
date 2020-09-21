@@ -10,8 +10,8 @@ $ cd devenv
 $ cp .env-example .env
 $ vim .env // Edit .env
 $ vagrant up
-$ vagrant ssh
 $ vagrant ssh-config >> ~/.ssh/config // For vacode
+$ vagrant ssh
 ```
 
 ## Preinstall list
