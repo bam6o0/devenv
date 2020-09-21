@@ -91,7 +91,7 @@ Vagrant.configure("2") do |config|
     sudo chmod +x /usr/local/bin/docker-compose
 
     sudo apt-get update
-    sudo apt-get install -y python3 python3-pip python3-venv nodejs npm
+    sudo apt-get install -y python3 python3-pip python3-venv nodejs npm jq
     pip3 install aws-mfa
 
     sudo npm install n -g
