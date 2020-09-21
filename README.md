@@ -27,6 +27,7 @@ $ vagrant ssh-config >> ~/.ssh/config
 + aws-cli
 + aws-cdk
 + aws-mfa
++ jq
 
 ## How to initialize
 ```
