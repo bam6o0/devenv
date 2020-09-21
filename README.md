@@ -1,5 +1,6 @@
 # devenv
-Virtual Machines for Development Environments.
+A virtual machine for constructing a development environment specialized for cloud development.
+
 
 ## How to use
 Create a .env file referring to the .env-example.
