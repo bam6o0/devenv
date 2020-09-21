@@ -10,7 +10,7 @@ $ cd devenv
 $ cp .env-example .env
 $ vim .env // Edit .env
 $ vagrant up
-$ vagrant ssh-config >> ~/.ssh/config // For vacode
+$ vagrant ssh-config >> ~/.ssh/config // For vscode
 $ vagrant ssh
 ```
 
