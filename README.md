@@ -6,7 +6,7 @@ Create a .env file referring to the .env-example.
 ```
 $ git clone https://github.com/bam6o0/devenv.git
 $ cd devenv
-$  .env-example .env
+$ cp .env-example .env
 // Edit .env
 $ vim .env
 $ vagrant up
