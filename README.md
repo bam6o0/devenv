@@ -34,6 +34,7 @@ $ aws-mfa
 + aws-cli
 + aws-cdk
 + aws-mfa
++ terraform
 + jq
 
 ## How to initialize

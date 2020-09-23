@@ -91,6 +91,11 @@ Vagrant.configure("2") do |config|
     sudo chmod +x /usr/local/bin/docker-compose
 
     sudo apt-get update
+    sudo apt-get install -y wget unzip
+    wget "https://releases.hashicorp.com/terraform/0.13.3/terraform_0.13.3_linux_amd64.zip"
+    sudo unzip terraform_0.13.3_linux_amd64.zip -d /usr/local/bin/ && sudo rm -r terraform_0.13.3_linux_amd64.zip  
+  
+    sudo apt-get update
     sudo apt-get install -y python3 python3-pip python3-venv nodejs npm jq
     pip3 install aws-mfa
 
@@ -117,5 +122,6 @@ Vagrant.configure("2") do |config|
     git config --system user.name "#{ENV['GIT_USER_NAME']}"
     git config --system user.email "#{ENV['GIT_USER_EMAIL']}"
 
+    sudo apt-get -y autoremove
   SHELL
 end
