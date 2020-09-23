@@ -3,6 +3,7 @@ A virtual machine for constructing a development environment specialized for clo
 
 
 ## How to use
+###  Boot the VM
 Create a .env file referring to the .env-example.
 ```
 $ git clone https://github.com/bam6o0/devenv.git
@@ -13,6 +14,12 @@ $ vagrant up
 $ vagrant ssh-config >> ~/.ssh/config // For vscode
 $ vagrant ssh
 ```
+### Authenticate AWS Cli with MFA Token.
+A default profile is automatically generated using the token in `.env`.
+```
+$ aws-mfa
+```
+### 
 
 ## Preinstall list
 + ubuntu18.04
