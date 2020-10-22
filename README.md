@@ -25,6 +25,7 @@ $ aws-mfa
 + ubuntu18.04
 + docker
 + docker-compose
++ docker-machine
 + python3
 + pip3
 + venv
